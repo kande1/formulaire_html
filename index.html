@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Les formulaires </title>
+    </head>
+    <body>
+        <h1>Formulaires HTML 5</h1>
+
+        <form action="traitement.php" method="POST" enctype="multipart/form-data">
+
+            <fieldset>
+                <legend>Connexion</legend>
+
+                
+                <div> <!--LES RADIOS-->
+                    <label for="masculin"> Homme :</label>
+                    <input type="radio" id="masculin" name="civilite" value="masculin">
+                    <label for="feminin"> Femme :</label>
+                    <input type="radio" id="feminin" name="civilite" value="feminin" checked>
+                </div>
+
+                <div class="form-group">
+                    <label for="nom"> Nom :</label>
+                    <input type="text" name="nom" id="nom" placeholder="Entrer votre nom">
+                      
+                </div>
+                <div class="form-group">
+                    <label for="email"> Email :</label>
+                    <input type="email" name="email" id="email">
+                </div>
+                <div class="form-group">
+                    <label for="password"> Password :</label>
+                    <input type="password" name="password" id="password">
+                </div>
+
+                <div>
+                    <label for="picture">Votre image :</label>
+                    <input type="file" id="picture" name="picture" accept="image/jpeg , image/png" >
+                </div>
+
+                
+                <div>
+                    <h4>Votre commentaire</h4>
+                     <textarea name="bio" id="commentaire" cols="30" rows="10" placeholder="Tapez votre message"></textarea>
+                </div>
+
+                
+                <div> <!--LISTE DEROULANTE-->
+                    <h4>Pays</h4>
+                    
+                    <select name="pays" id="contry" size="2">
+                        <option value="france">France</option>
+                        <option value="allemagne">Allemagne</option>
+                        <option value="espagne">Espagne</option>
+                        <option value="italie">Italie</option>
+                        <option value="canada">Canada</option>
+                        <option value="maroc">Maroc</option>
+                        <option value="tunisie">Tunisie</option>
+                        <option value="cote-ivoire" selected>Cote d'ivoire</option>
+
+                    </select>
+                </div>
+
+                
+                <div> <!--LES CHECKBOX-->
+                    <h4>Sports :</h4>
+
+                    <label for="course"> Course :</label>
+                    <input type="checkbox" id="course" name="course" value="course">
+                    <label for="handball"> Handball :</label>
+                    <input type="checkbox" id="handball" name="handball" value="handball">
+                    <label for="football">Football :</label>
+                    <input type="checkbox" id="football" name="football" value="football">
+                </div>
+
+                <div>
+                    <input type="submit" value="Se connecter">
+                    <input type="reset" value="Effacer">
+                </div>
+
+            </fieldset>
+        </form>
+    </body>
+</html>
